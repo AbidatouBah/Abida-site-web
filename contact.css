@@ -1,0 +1,221 @@
+body{
+    margin: 0px; 
+    padding: 0px;
+    box-sizing: border-box;
+    background-image: url(R.jpg);
+    background-size: cover;
+    }
+    header{
+        background-color: violet;
+        display: flex;
+        justify-content: space-between;
+    }
+    header .titre{
+        font-size: 30px;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serifs;
+    }
+    nav ul{
+        display: flex;
+        list-style-type: none;
+        margin-right: 20px;
+    }
+    nav ul li{
+        margin: 5px;
+    
+    }
+    nav ul li a{
+        text-decoration: none;
+        font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    nav ul li a:hover{ 
+        border-bottom: 5px solid white;
+        padding-bottom: 3px;
+        color: blue;
+    }
+    .contenair{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+
+    }
+    .contenair .gauche{
+        background-color: gray;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+        
+
+
+    }
+    .contenair .gauche .Info{
+        line-height: 60px;
+        color: white;
+        font-size: 20px;
+        margin-left: 20%;
+    }
+    h1{
+        font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        font-style: italic;
+        text-align: center;
+    
+    }
+    h3{
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        text-align: center;
+    }
+    .contenair .droite{
+        background-color: whitesmoke;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        
+    }
+    .contenair .droite .forme{
+        line-height: 50%;
+    }
+    .contenair .droite h1{
+        color: black;
+    }
+    .contenair .droite .for{
+        margin-top: 20px;
+        margin-left: 30px;
+        width: 50%;
+        box-shadow:inset 8px 8px 8px 8px rgb(215,206,206), inset -8px -8px 8px  white;
+        padding: 14px 12px;
+        border-radius: 30px;
+    }
+    .contenair .droite .for input{
+        border:none;
+        font-size: 20px;
+        background: none;
+        outline: none;
+    }
+    .contenair .droite .for textarea{
+        resize: none;
+        border: none;
+        background: none;
+        outline: none;
+        font-size: 20px;
+
+
+    }
+    .contenair .droite button{
+        width: 50%;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-size: 20px;
+        border-radius: 30px;
+        background-color: violet;
+    }
+     /*partie tablette*/
+@media screen and (max-width:900px){
+    header .titre{
+        font-size: 18px;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serifs;
+    }
+    nav ul li a{
+        text-decoration: none;
+        font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.contenair{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    margin-left: 20px;
+
+}
+
+    .contenair .droite{
+        border: none;
+        
+    }
+} /* partie Android */
+@media screen and (max-width:500px){
+
+    nav ul li a{
+        font-size: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+       
+        }
+    
+        .contenu .Gauche h1{
+            font-size: 20px;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            margin: 0px;
+        }
+        .contenu .Gauche h2{
+        
+            font-size: 10px;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-transform: lowercase;
+            margin: 0px;
+        }
+  
+        body{
+            margin: 0px; 
+            padding: 0px;
+            box-sizing: border-box;
+            background-image: url(R.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+}
+header .titre{
+    font-size: 10px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serifs;
+    margin-top: 15px;
+}
+.contenair .droite{
+    background-color: whitesmoke;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    
+}
+.contenair .gauche{
+    background-color: gray;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+
+
+}
+.contenair{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    margin-left: 50px;
+
+}
+
+
+} 
+
+
+
